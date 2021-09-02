@@ -3,13 +3,13 @@ package CollectionUptoArrayList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Student
+class Student1
 {
 	int rollno;
 	String name;
 
 
-	public Student(int rollno,String name) {
+	public Student1(int rollno,String name) {
 
 		this.rollno=rollno;
 		this.name=name;
@@ -27,7 +27,7 @@ class Student
 public class StudentArrayList {
 	public static void main(String[] args) {
 
-		ArrayList<Student> s1=new ArrayList<>();
+		ArrayList<Student1> s1=new ArrayList<>();
 
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter size of student");
@@ -41,13 +41,13 @@ public class StudentArrayList {
 			int rollno=scanner.nextInt();
 			String name=scanner.next();
 
-			Student s2=new Student(rollno,name);
+			Student1 s2=new Student1(rollno,name);
 			s1.add(s2);
 
 		}
 
 
-		for(Student s:s1)
+		for(Student1 s:s1)
 		{
 			System.out.println(s);
 		}
@@ -66,7 +66,7 @@ public class StudentArrayList {
 
 
 
-
+	
 	}
 
 }

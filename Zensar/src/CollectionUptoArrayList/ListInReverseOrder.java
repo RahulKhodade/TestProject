@@ -17,7 +17,7 @@ public class ListInReverseOrder {
 		
 		//System.out.println(a1);
 		
-	ListIterator<String> al=a1.listIterator();
+	ListIterator<String> al=a1.listIterator(a1.size());
 	while(al.hasPrevious())
 	{
 		System.out.println(al.previous());
