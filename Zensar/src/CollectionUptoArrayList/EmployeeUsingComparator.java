@@ -48,17 +48,15 @@ class AgeComparator implements Comparator<Emp>
 }
 
 
-
-
-public class EmployeeUsingComparator {
+ public class EmployeeUsingComparator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		ArrayList<Emp> emp=new ArrayList<>();
 		emp.add(new Emp("Rahul","Developer",23));
-		emp.add(new Emp("Nishant","Testing",22));
-		emp.add(new Emp("Amol","Senior Programmer",34));
+		emp.add(new Emp("Nishant","Testing",32));
+		emp.add(new Emp("Amol","Senior Programmer",22));
 		emp.add(new Emp("Sachin","Senior Software Engineer",25));
 		
 		Collections.sort(emp,new AgeComparator());
